@@ -1,0 +1,14 @@
+site:
+  title: "Training Hub"
+
+server:
+  files:
+    dev:
+      contentRoot: "build/processedResources/js/main/public"
+      script: "build/kotlin-webpack/js/developmentExecutable/traininghub.js"
+      api: "build/libs/traininghub.jar"
+    prod:
+      script: "build/kotlin-webpack/js/productionExecutable/traininghub.js"
+      siteRoot: ".kobweb/site"
+
+  port: 8080
